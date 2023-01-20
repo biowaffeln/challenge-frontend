@@ -1,0 +1,122 @@
+.coverPicture {
+  height: 200px;
+  width: 100%;
+  background-position: center center;
+}
+
+.content {
+  background: var(--quno-secondary);
+  padding-inline: 21px;
+  padding-top: 32px;
+  color: var(--quno-text-light);
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
+  padding-bottom: 64px;
+}
+
+.kicker {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--quno-primary);
+}
+
+.heading {
+  font-size: 36px;
+  line-height: 44px;
+  margin-top: 8px;
+  word-break: break-word;
+}
+
+.location {
+  display: flex;
+  gap: 5px;
+  color: var(--quno-text-secondary-muted);
+  margin-top: 8px;
+
+  & [data-icon] {
+    margin-top: 3px;
+  }
+}
+
+.scoreCount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-quicksand);
+  color: var(--quno-primary);
+  font-size: 20px;
+  line-height: 24px;
+  --size: 50px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  border: 2px solid var(--quno-primary);
+  box-shadow: 0 0 0 2px var(--quno-primary-transparent);
+}
+
+.scoreText {
+  color: var(--quno-primary);
+  font-weight: 700;
+}
+
+.scoreLabel {
+  font-size: 10px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 79%);
+}
+
+.scoreContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 36px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 21px;
+  & li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  & [data-icon] {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 40px;
+
+  & a {
+    padding: 13px 14px 12px;
+    border-radius: 4px;
+    font-family: var(--font-quicksand);
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    color: var(--quno-secondary);
+  }
+}
+
+.primaryAction {
+  background: var(--quno-primary);
+}
+
+.secondaryAction {
+  background: white;
+}

@@ -4,7 +4,7 @@ export interface Doctor {
   city: string;
   country: string;
   qunoScoreNumber: number;
-  qunoScoreText: 'Excelent' | 'Very Good' | 'Good' | 'Regular' | 'Bad';
+  qunoScoreText: 'Excellent' | 'Very Good' | 'Good' | 'Regular' | 'Bad';
   ratingsAverage: number;
   treatmentsLastYear: number;
   yearsExperience: number;

@@ -2,7 +2,7 @@ import { Doctor } from "./@types/Doctor";
 
 export function mapQunoscoreToText(qunoScore: number): Doctor["qunoScoreText"] {
   if (qunoScore >= 9) {
-    return "Excelent";
+    return "Excellent";
   }
 
   if (qunoScore >= 8) {

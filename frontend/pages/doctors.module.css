@@ -1,0 +1,70 @@
+.hero {
+  background: var(--quno-secondary);
+  color: var(--quno-text-light);
+
+  display: flex;
+  flex-direction: column;
+  padding: 44px 21px 32px;
+
+  & h1 {
+    font-size: 44px;
+    line-height: 53.59px;
+  }
+
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  & ul li {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  & ul li [data-icon] {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  margin-top: 10px;
+  padding-inline: 21px;
+  padding-block: 20px;
+}
+
+.button {
+  min-height: min-content;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  padding: 9px 20px;
+  font-size: 14px;
+  line-height: 20px;
+  background: transparent;
+  border: 1px solid hsla(0, 0%, 79%, 1);
+  white-space: nowrap;
+}
+
+.button[data-active='true'] {
+  background-color: var(--quno-primary);
+  border-color: var(--quno-primary);
+  color: var(--quno-text-dark);
+}
+
+.doctorsList {
+  padding-inline: 21px;
+
+  & > * + * {
+    border-top: 1px solid hsla(0, 0%, 79%, 0.6);
+  }
+}

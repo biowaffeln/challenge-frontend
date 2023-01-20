@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#__next,
+.root {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  color: var(--quno-text-dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+.root {
+  font-family: var(--font-inter);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-weight: 400;
+  font-family: var(--font-quicksand);
+}
+
+:root {
+  --quno-primary: hsla(41, 100%, 67%, 1);
+  --quno-primary-transparent: hsla(41, 100%, 67%, 0.2);
+  --quno-secondary: hsla(193, 65%, 24%, 1);
+  --quno-text-dark: hsla(0, 0%, 6%, 1);
+  --quno-text-light: hsla(0, 0%, 100%, 1);
+  --quno-text-muted: hsla(0, 0%, 28%, 1);
+  --quno-text-secondary-muted: hsla(194, 36%, 74%, 1);
+}

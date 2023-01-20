@@ -1,0 +1,9 @@
+.nav {
+  height: 72px;
+  display: grid;
+  place-items: center;
+}
+
+.nav [data-icon] {
+  height: 20px;
+}

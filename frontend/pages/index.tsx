@@ -1,14 +1,12 @@
-import Nav from 'components/Nav';
+export default function Index() {
+  return null;
+}
 
-const IndexPage = (): JSX.Element => {
-  return (
-    <div>
-      <Nav />
-      <div>
-        <h1>Next.js</h1>
-      </div>
-    </div>
-  );
+export const getServerSideProps = async () => {
+  return {
+    redirect: {
+      destination: '/doctors',
+      permanent: false,
+    },
+  };
 };
-
-export default IndexPage;

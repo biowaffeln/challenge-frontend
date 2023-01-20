@@ -9,8 +9,8 @@
     "lint": "eslint 'src/**/*.ts'",
     "build": "tsc --build --verbose",
     "clean": "rm -rf ./dist",
-    "dev": "yarn build && serverless offline start --httpPort 4000 --noPrependStageInUrl --noAuth",
-    "start": "yarn dev"
+    "dev": "npm run build && serverless offline start --httpPort 4000 --noPrependStageInUrl --noAuth",
+    "start": "npm run dev"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.64",
